@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 :root {
-    --main-color: #008000;
+    --main-color: #ff7300;
     --main-padding-color: #121212;
     --main-text-area: #fff;
     --mina-text-inline: #000;
@@ -32,12 +32,17 @@ body {
     font-weight: 400;
 }
 
-.starter>h1>span {
+.starter>h1>a {
+    text-decoration: none;
+    color: #141414;
+}
+
+.starter>h1>a>span {
     color: #141414;
     font-weight: 550;
 }
 
-.starter>h1>span#color {
+.starter>h1>a>span#color {
     color: var(--main-color);
     font-weight: bolder;
 }
@@ -45,7 +50,7 @@ body {
 
 ul>li {
     list-style: none;
-    display: inline-block;
+    display: inline-flex;
     background-color: var(--main-text-area);
     margin-bottom: 10px;
     padding: 8px;
@@ -113,11 +118,15 @@ ul>li {
 #list-infos>li>a:hover {
     opacity: 75%;
     text-decoration: underline;
+    padding: 3px 10px 3px 10px;
 }
 
 #list-default>li>a:hover {
-    opacity: 75%;
     text-decoration: underline;
+    padding: 15%;
+    border-radius: 8px;
+    color: var(--mina-text-inline);
+    background-color: var(--main-text-area);
 }
 
 .menu-third {
@@ -147,13 +156,14 @@ ul>li {
 
 #list-depart>li:hover {
     border-radius: 8px;
+    padding: 3px 10px 3px 10px;
 }
 
 
 #list-depart>li>a:hover {
     opacity: 75%;
     text-decoration: underline;
-    
+    padding: 3px 10px 3px 10px;
 }
 
 .busca {
@@ -198,23 +208,168 @@ main {
     margin: 5px;
 }
 
-main > img {
+main>a>img {
     border: 8px solid var(--main-color);
+    border-radius: 8px;
+    max-width: 550px;
+    max-height: 450px;
+    width: min-content;
+    height: min-content;
+
 }
 
-main > .catalogo > .produtos {
+main>.catalogo {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    margin: 10px;
+}
+
+.select {
+    display: flex;
+    flex-direction: column;
+}
+
+.checkbox-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+input[type="checkbox"] {
+    margin-right: 8px;
+}
+
+
+main>.catalogo>.produtos-display>.produtos {
+    box-shadow: 0px 10px 100px 45px rgba(0,0,0,0.1);
     margin: 10px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: space-evenly;
-    border: 2px solid black;
-
+    padding: 8px;
 }
 
-.produtos > img {
-    max-width:200px;
-    max-height:150px;
+.produtos > a {
+    text-decoration: none;
+}
+
+.produtos > p {
+    max-width: 200px;
+    max-height: 150px;
+    overflow: auto;
+    word-wrap: break-word;
+}
+
+.produtos > i {
+    margin: 10px 0 10px 0;
+}
+
+main>.catalogo>.produtos-display {
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: stretch;
+    align-content: space-around;
+}
+
+.produtos>a>img {
+    min-height: 200px;
+    min-width: 200px;
+    max-width: 200px;
+    max-height: 150px;
     width: auto;
     height: auto;
+    margin: auto;
+}
+
+.menu-sac {
+    padding: 15px 35px 15px 35px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #101010;
+    color: var(--main-text-area);
+}
+
+.menu-sac > a {
+    text-decoration: none;
+    color: var(--main-text-area);
+    transition: 0.3s;
+}
+
+.menu-sac > a:hover {
+    padding: 0 5px 0 5px;
+    text-decoration: underline;
+}
+
+footer {
+    background-color: var(--main-padding-color);
+    padding: 10px;
+    min-width: 100%;
+    min-height: 100%;
+    display: block;
+    width: auto;
+    height: auto;
+    color: white;
+}
+
+.container-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: space-around;
+}
+
+.logo-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: space-around;
+}
+
+.logo-footer > * {
+    margin: 10px;
+}
+
+.logo-footer > a {
+    text-decoration: none;
+}
+
+.logo-footer > a > h3 {
+    color: var(--main-color);
+    text-decoration: none;
+}
+
+.acess {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: space-around;
+}
+
+.acess > * {
+    margin: 10px;
+}
+
+i {
+    color: var(--main-color);
+    transition: 0.3s;
+}
+
+footer>p {
+    text-align: center;
+    margin: 10px;
+}
+
+footer>p>a {
+    text-decoration: underline;
+    color: var(--main-text-area);
+    transition: 0.3s;
+}
+
+footer>p>a:hover {
+    background-color: var(--main-color);
+    border-radius: 8px;
+    margin: 0.5px;
+    padding: 3px 10px 3px 10px;
 }
