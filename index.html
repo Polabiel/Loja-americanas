@@ -12,15 +12,16 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="style.css" />
-    <title>Celular Upsert</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Logo</title>
   </head>
 
   <body>
     <div class="starter">
       <h1>
         <a href="#">
-          <span>Compra agora</span> · O seu novo Iphone 12
-          <span>com até 40% de desconto ·</span>
+          <span>Compra agora</span> · O seu novo
+          <span>IPHONE 14 PRO MAX </span>com até 40% de desconto ·
           <span id="color">Aproveitaaaa</span>
         </a>
       </h1>
@@ -29,7 +30,7 @@
       <div class="menu-first">
         <div class="logo">
           <a href="#">
-            <h3>Celular Upsert</h3>
+            <h3>Logo</h3>
           </a>
         </div>
 
@@ -40,35 +41,32 @@
             id="pesquisa"
             name="pesquisa"
           />
-          <button id="btn-search">Pesquisar</button>
+          <button id="btn-search" onclick="displayText()"><i class="fa-solid fa-magnifying-glass"></i></button>
         </div>
 
         <ul id="list-default">
-          <li><a href="#">Login</a></li>
-          <li><a href="#">Carrinho</a></li>
-          <li><a href="#">Favoritos</a></li>
+          <li><a href="#"><i class="fa-solid fa-right-to-bracket"></i> Login</a></li>
+          <li><a href="#"><i class="fa-solid fa-cart-plus"></i> Carrinho</a></li>
+          <li><a href="#"><i class="fa-solid fa-heart"></i> Favoritos</a></li>
         </ul>
       </div>
       <div class="line"></div>
       <div class="menu-two">
         <ul id="list-infos">
           <li>
-            <a href="#">Informe seu CEP</a>
+            <a href="#"><i class="fa-solid fa-location-dot"></i> Informe seu CEP</a>
           </li>
-          <li><a href="#">Serviços do Zé mangá</a></li>
-          <li><a href="#">Reportar erro</a></li>
+          <li><a href="#"><i class="fa-solid fa-bell-concierge"></i> Serviços do Zé mangá</a></li>
+          <li>
+            <a href="https://github.com/Polabiel/Loja-americanas/issues"><i class="fa-solid fa-bug"></i> Reportar erro</a>
+          </li>
         </ul>
       </div>
       <div class="menu-third">
         <ul id="list-depart">
-          <li><a href="#">Mercado</a></li>
-          <li><a href="#">Celulares</a></li>
-          <li><a href="#">Eletrodomésticos</a></li>
-          <li><a href="#">Informática</a></li>
-          <li><a href="#">TV e Home Theater</a></li>
-          <li><a href="#">Eletroportáteis</a></li>
-          <li><a href="#">Móveis</a></li>
-          <li><a href="#">Beleza e perfumaria</a></li>
+          <li><a href="#"><i class="fa-solid fa-comment"></i> Avalie</a></li>
+          <li><a href="#"><i class="fa-brands fa-discord"></i> Discord</a></li>
+          <li><a href="#"><i class="fa-solid fa-share"></i> Compartilha</a></li>
         </ul>
       </div>
     </nav>
@@ -175,7 +173,7 @@
                 </i>
               </i>
             </i>
-            <p>R$ 1.000.000.000.001</p>
+            <p id="value">R$ 1.000,001</p>
             <p>sua vida inteira em até 1.000 sem juros no cartão de crédito</p>
           </div>
           <div class="produtos">
@@ -195,7 +193,7 @@
                 </i>
               </i>
             </i>
-            <p>R$ 1,00</p>
+            <p id="value">R$ 1,00</p>
             <p>3x de 58,29 sem juros no cartão de crédito</p>
           </div>
           <div class="produtos">
@@ -206,6 +204,17 @@
               />
               <h5>Xiaomi Mi Lite 5G</h5>
             </a>
+            <i class="fa-solid fa-star">
+              <i class="fa-solid fa-star">
+                <i class="fa-solid fa-star">
+                  <i class="fa-solid fa-star">
+                    <i class="fa-solid fa-star"></i>
+                  </i>
+                </i>
+              </i>
+            </i>
+            <p id="value">R$ 2.460,00</p>
+            <p>12x de até 0,01 sem juros no cartão</p>
           </div>
           <div class="produtos">
             <a href="#">
@@ -215,6 +224,17 @@
               />
               <h5>Huawei Mate 50 PRO</h5>
             </a>
+            <i class="fa-regular fa-star">
+              <i class="fa-regular fa-star">
+                <i class="fa-regular fa-star">
+                  <i class="fa-regular fa-star">
+                    <i class="fa-regular fa-star"></i>
+                  </i>
+                </i>
+              </i>
+            </i>
+            <p id="value">R$ 0,01</p>
+            <p>O melhor</p>
           </div>
           <div class="produtos">
             <a href="#">
@@ -224,6 +244,17 @@
               />
               <h5>LG K12 Max</h5>
             </a>
+            <i class="fa-solid fa-star">
+              <i class="fa-solid fa-star">
+                <i class="fa-regular fa-star">
+                  <i class="fa-regular fa-star">
+                    <i class="fa-regular fa-star"></i>
+                  </i>
+                </i>
+              </i>
+            </i>
+            <p id="value">R$ 3.450,00</p>
+            <p>Acho melhor você pensar bem antes de comprar</p>
           </div>
           <div class="produtos">
             <a href="#">
@@ -233,6 +264,17 @@
               />
               <h5>Google Pixel 6</h5>
             </a>
+            <i class="fa-solid fa-star">
+              <i class="fa-solid fa-star">
+                <i class="fa-solid fa-star">
+                  <i class="fa-regular fa-star">
+                    <i class="fa-regular fa-star"></i>
+                  </i>
+                </i>
+              </i>
+            </i>
+            <p id="value">R$ 5.070,00</p>
+            <p>Muito usado para quem trabalha</p>
           </div>
           <div class="produtos">
             <a href="#">
@@ -242,6 +284,17 @@
               />
               <h5>OnePlus 9</h5>
             </a>
+            <i class="fa-solid fa-star">
+              <i class="fa-regular fa-star">
+                <i class="fa-regular fa-star">
+                  <i class="fa-regular fa-star">
+                    <i class="fa-regular fa-star"></i>
+                  </i>
+                </i>
+              </i>
+            </i>
+            <p id="value">R$ 2.679,99</p>
+            <p>O celular do momento</p>
           </div>
           <div class="produtos">
             <a href="#">
@@ -251,6 +304,17 @@
               />
               <h5>Sony Xperia 5 IV</h5>
             </a>
+            <i class="fa-solid fa-star">
+              <i class="fa-solid fa-star">
+                <i class="fa-solid fa-star">
+                  <i class="fa-solid fa-star">
+                    <i class="fa-regular fa-star"></i>
+                  </i>
+                </i>
+              </i>
+            </i>
+            <p id="value">R$ 2.499,99</p>
+            <p>Muito antigo mas vale a pena</p>
           </div>
           <div class="produtos">
             <a href="#">
@@ -260,6 +324,17 @@
               />
               <h5>Moto G24 126Gb</h5>
             </a>
+            <i class="fa-solid fa-star">
+              <i class="fa-solid fa-star">
+                <i class="fa-solid fa-star">
+                  <i class="fa-solid fa-star">
+                    <i class="fa-solid fa-star"></i>
+                  </i>
+                </i>
+              </i>
+            </i>
+            <p id="value">R$ 1.199,99</p>
+            <p>Muito novo vale a pena</p>
           </div>
           <div class="produtos">
             <a href="#">
@@ -267,9 +342,21 @@
                 src="https://t.ctcdn.com.br/8v-8lPvqhGR1gJ3__0E8xs6gwR0=/fit-in/400x400/filters:format(webp):fill(transparent):watermark(wm/prd.png,-32p,center,1,none,15)/i543719.png"
                 alt="Oppo Find N"
               />
-              <h5>Moto G24 126Gb</h5>
+              <h5>Oppo Find N</h5>
             </a>
+            <i class="fa-solid fa-star">
+              <i class="fa-solid fa-star">
+                <i class="fa-solid fa-star">
+                  <i class="fa-solid fa-star">
+                    <i class="fa-regular fa-star"></i>
+                  </i>
+                </i>
+              </i>
+            </i>
+            <p id="value">R$ 2.499,99</p>
+            <p>Não sei opiniar sobre</p>
           </div>
+          
         </div>
       </div>
     </main>
@@ -282,11 +369,11 @@
     <footer>
       <div class="container-footer">
         <div class="logo-footer">
-          <a href="#"><h3>Celular Upsert</h3></a>
+          <a href="#"><h3>Logo</h3></a>
           <p>Tudo. A toda hora. Em qualquer lugar.</p>
         </div>
         <div class="acess">
-          <p>Acessibilidade digital na Celular Upsert</p>
+          <p>Acessibilidade digital na Logo</p>
           <ul>
             <li>
               <a href="https://www.youtube.com/polabiel"
@@ -299,18 +386,23 @@
               ></a>
             </li>
             <li>
-              <a href="https://www.instagram.com/"
+              <a href="https://www.instagram.com/polabiel"
                 ><i class="fa-brands fa-instagram"></i
               ></a>
             </li>
             <li>
-              <a href="https://twitter.com/"
+              <a href="https://twitter.com/pennerzin"
                 ><i class="fa-brands fa-twitter"></i
               ></a>
             </li>
             <li>
-              <a href="https://www.tiktok.com/"
+              <a href="https://www.tiktok.com/polabiel"
                 ><i class="fa-brands fa-tiktok"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://www.github.com/polabiel"
+                ><i class="fa-brands fa-github"></i
               ></a>
             </li>
           </ul>
@@ -322,4 +414,5 @@
       </p>
     </footer>
   </body>
+  <script src="script.js"></script>
 </html>
