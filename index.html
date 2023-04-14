@@ -12,7 +12,7 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="style.css" />
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <title>Logo</title>
   </head>
 
@@ -20,7 +20,7 @@
     <div class="starter">
       <h1>
         <a href="#">
-          <span>Compra agora</span> · O seu novo
+          <span>Compre agora</span> · O seu novo
           <span>IPHONE 14 PRO MAX </span>com até 40% de desconto ·
           <span id="color">Aproveitaaaa</span>
         </a>
@@ -41,42 +41,58 @@
             id="pesquisa"
             name="pesquisa"
           />
-          <button id="btn-search" onclick="displayText()"><i class="fa-solid fa-magnifying-glass"></i></button>
+          <button id="btn-search" onclick="displayText()">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
         </div>
 
         <ul id="list-default">
-          <li><a href="#"><i class="fa-solid fa-right-to-bracket"></i> Login</a></li>
-          <li><a href="#"><i class="fa-solid fa-cart-plus"></i> Carrinho</a></li>
-          <li><a href="#"><i class="fa-solid fa-heart"></i> Favoritos</a></li>
+          <li>
+            <a href="#"><i class="fa-solid fa-right-to-bracket"></i> Login</a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-solid fa-cart-plus"></i> Carrinho</a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-solid fa-heart"></i> Favoritos</a>
+          </li>
         </ul>
       </div>
       <div class="line"></div>
       <div class="menu-two">
         <ul id="list-infos">
           <li>
-            <a href="#"><i class="fa-solid fa-location-dot"></i> Informe seu CEP</a>
+            <a
+              href="https://buscacepinter.correios.com.br/app/endereco/index.php"
+              ><i class="fa-solid fa-location-dot"></i> Informe seu CEP</a
+            >
           </li>
-          <li><a href="#"><i class="fa-solid fa-bell-concierge"></i> Serviços do Zé mangá</a></li>
           <li>
-            <a href="https://github.com/Polabiel/Loja-americanas/issues"><i class="fa-solid fa-bug"></i> Reportar erro</a>
+            <a href="#" onclick="displayText()"
+              ><i class="fa-solid fa-bell-concierge"></i> Serviços</a
+            >
+          </li>
+          <li>
+            <a href="https://github.com/Polabiel/Loja-americanas/issues"
+              ><i class="fa-solid fa-bug"></i> Reportar erro</a
+            >
           </li>
         </ul>
       </div>
-      <div class="menu-third">
-        <ul id="list-depart">
-          <li><a href="#"><i class="fa-solid fa-comment"></i> Avalie</a></li>
-          <li><a href="#"><i class="fa-brands fa-discord"></i> Discord</a></li>
-          <li><a href="#"><i class="fa-solid fa-share"></i> Compartilha</a></li>
-        </ul>
-      </div>
+      
     </nav>
     <main>
-      <h2>Promoção</h2>
-      <a href="#"
-        ><img
-          src="https://www.ayabooks.com.br/img/aya-2022.png"
-          alt="Celulares em promoção"
-      /></a>
+      <div class="carrossel">
+        <ul class="slider">
+          <li>
+            <a href="#"
+              ><img
+                src="https://www.ayabooks.com.br/img/aya-2022.png"
+                alt="Celulares em promoção"
+            /></a>
+          </li>
+        </ul>
+      </div>
       <div class="catalogo">
         <div class="select">
           <p><b>Marcas</b></p>
@@ -160,9 +176,9 @@
             <a href="#">
               <img
                 src="https://planoscelular.claro.com.br/medias/18393-0-zero-300Wx300H-productCard?context=bWFzdGVyfGltYWdlc3w2NTY1NXxpbWFnZS9wbmd8aGZjL2gxYy85MjY3NDkwOTc5ODcwLzE4MzkzXzBfemVyb18zMDBXeDMwMEhfcHJvZHVjdENhcmR8MmExMTcyZTk4ODg3ZDkxYzQwZjkyMDUxYzYxNDhlMDM5NjM4YzI3OWE5OTg4N2UxYzNiNDJmNjk2ZjFhMTE0NQ"
-                alt="Apple Iphone 14 PRO MAX 256Gb"
+                alt="Apple iPhone 14 PRO MAX 256Gb"
               />
-              <h5>Apple Iphone 14 PRO MAX 256Gb</h5>
+              <h5>Apple iPhone 14 PRO MAX 256Gb</h5>
             </a>
             <i class="fa-solid fa-star">
               <i class="fa-regular fa-star">
@@ -356,7 +372,46 @@
             <p id="value">R$ 2.499,99</p>
             <p>Não sei opiniar sobre</p>
           </div>
-          
+          <div class="produtos">
+            <a href="#">
+              <img
+                src="https://phisis.com.br/wp-content/uploads/2022/11/Rose1.png"
+                alt="iPhone 8 Plus 64Gb"
+              />
+              <h5>iPhone 8 Plus 64Gb</h5>
+            </a>
+            <i class="fa-solid fa-star">
+              <i class="fa-solid fa-star">
+                <i class="fa-solid fa-star">
+                  <i class="fa-solid fa-star">
+                    <i class="fa-regular fa-star"></i>
+                  </i>
+                </i>
+              </i>
+            </i>
+            <p id="value">R$ 2.999,99</p>
+            <p>Preço de um motorola</p>
+          </div>
+          <div class="produtos">
+            <a href="#">
+              <img
+                src="https://www.imagensempng.com.br/wp-content/uploads/2021/09/450.png"
+                alt="Black Berry"
+              />
+              <h5>Black Berry</h5>
+            </a>
+            <i class="fa-solid fa-star">
+              <i class="fa-solid fa-star">
+                <i class="fa-solid fa-star">
+                  <i class="fa-solid fa-star">
+                    <i class="fa-solid fa-star"></i>
+                  </i>
+                </i>
+              </i>
+            </i>
+            <p id="value">R$ 249,00</p>
+            <p>Melhor celular desde de 98</p>
+          </div>
         </div>
       </div>
     </main>
