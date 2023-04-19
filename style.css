@@ -65,7 +65,7 @@ ul>li {
 }
 
 .logo>a>img{
-    top: 6px;
+    top: 6px,;
     position: relative;
     filter: brightness(200) contrast(100);
     max-width: 200px;
