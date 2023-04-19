@@ -64,8 +64,8 @@ ul>li {
     color: var(--main-text-area);
 }
 
-.logo>a>img{
-    top: 6px,;
+.logo>a>img {
+    top: 6px, ;
     position: relative;
     filter: brightness(200) contrast(100);
     max-width: 200px;
@@ -197,7 +197,6 @@ ul>li {
     display: flex;
 }
 
-
 #pesquisa {
     border: 0px none;
     width: 95%;
@@ -239,7 +238,7 @@ ul>li {
     transition: 0.3s;
 }
 
-.departamentos>ul>li:hover {   
+.departamentos>ul>li:hover {
     border-radius: 8px;
     transform: scale(1.2);
     color: var(--main-color);
@@ -257,7 +256,7 @@ main {
     padding: 10px;
 }
 
-.carrossel > h1 {
+.carrossel>h1 {
     margin: 10px auto;
     text-align: center;
     border-bottom: #000 solid;
@@ -278,7 +277,7 @@ main {
 }
 
 .slider>li>a>img {
-    margin:auto;
+    margin: auto;
     max-width: 550px;
     max-height: 350px;
 }
